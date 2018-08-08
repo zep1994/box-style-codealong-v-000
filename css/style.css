@@ -41,75 +41,97 @@ img, video, audio, iframe, table, form {
   max-width: 100%; /* FF, Safari, Chrome */
 }
 
-/*////////// FIXES //////////*/
+
+@font-face {
+	font-family: 'Baskerville';
+	src: url(../fonts/Baskerville.ttc);
+}
+
+/*////////// Global Styles //////////*/
 
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 
-.clearfix:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  height: 0;
-  line-height: 0;
+body {
+	background: #F3EBE9;
+	font-size: 100%;
+	font-family: 'Times New Roman', serif; 
 }
-
-.clear {
-  clear:both;
-}
-
-/*/////// LAYOUT ////////*/
 
 .wrapper {
-  width: 960px;
-  margin: 0 auto;
+	width: 960px;
+	margin: 0 auto;
+	background: #fff;
+	padding: 0 45px 20px;
 }
 
-.col-1 {
-  float: left;
-  width: 32%;
-  background: #ccc;
+h1 {
+	padding-bottom: 10px;
+	margin: 0 0 5px;
+	font-size: 5em;
+	font-weight: normal;
+	font-family: 'Baskerville', serif;
+	border-bottom: 1px solid #ccc;
 }
 
-.col-2 {
-  float: left;
-  width: 66%;
-  background: #ccc;
+h2 {
+	color: rgb(111,127,122);
+	font-size: 2em;
 }
 
-.col-3 {
-  background: #ccc;
+p  {
+	color: #555;
+	font-size: 1em;
+	margin: 0 0 20px 0;
 }
 
-[class*="col-"] {
-  margin-left: 2%;
+.small {
+	font-size: 0.8em;
 }
 
-.first {
-  margin-left: 0%;
+/*////////// Section Styles //////////*/
+
+header a {
+	color: rgb(152,173,166);
+	text-decoration: none;
 }
 
-/*/////// SOCIAL ////////*/
-
-#social {
-  position: fixed;
-  top: 185px;
-  right: 20px;
-  width: 40px;
-  z-index: 1;
+header a:hover {
+	color: rgb(111,127,122);
 }
 
-#social a {
-  display: block;
-  width: 40px;
-  height: 40px;
-  background: yellow;
+#featured img {
+	border: 5px rgb(152,173,166) solid;
 }
 
+#featured a {
+	color: #1783bb;
+	text-decoration: none;
+}
+
+#featured a:hover {
+	text-decoration: underline;
+}
+
+#press {
+	margin-bottom: 20px;
+}
+
+#press img {
+	border: 5px #ccc solid;
+	padding: 1px;
+}
+
+#press img:hover {
+	border: 5px rgb(111,127,122) solid;
+}
+
+footer {
+	text-align: right;
+	background: #fff;
+}
 /*////////// HEADER //////////*/
 
 
